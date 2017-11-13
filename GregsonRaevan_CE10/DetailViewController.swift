@@ -45,7 +45,7 @@ class DetailViewController: UIViewController {
                 let task = session.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
                     if error != nil{
                         //error check
-                        print("Data Task failed with error:\(error)")
+                        print("Data Task failed with error:\(String(describing: error))")
                         return
                     }
                     //console will print success if all is well then another check which within I call the function to parse my JSON data
